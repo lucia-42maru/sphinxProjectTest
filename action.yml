@@ -1,0 +1,37 @@
+name: 'Sphinx Pages'
+description: 'Builds GitHub Pages with Sphinx'
+author: 'Original by Sean Zheng, Edited by Seunggyu Han'
+branding:
+  icon: 'edit'
+  color: 'blue'
+inputs:
+  github_token:
+    description: 'Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}'
+    required: true
+  create_readme:
+    description: 'Auto create a README.md file at branch docs root with repo/branch/commit links'
+    default: false
+  source_dir:
+    description: 'Path to documentation source files that relative to project root'
+    default: '.'
+  install_extensions:
+    description: 'Install Sphinx extensions listed in $source_dir/requirements.txt'
+    default: true
+  branch_name:
+    description: 'Branch to generate automatic docs'
+    default: 'master'
+  module_location:
+    description: 'Where the actual module(which has __init__.py inside) is'
+    required: true
+outputs:
+  name:
+    description: 'Author name'
+  email:
+    description: 'Author email'
+  docs_sha:
+    description: 'Sphinx source sha'
+  docs_sha8:
+    description: 'Sphinx source short sha'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
