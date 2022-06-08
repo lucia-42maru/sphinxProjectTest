@@ -32,15 +32,3 @@ class Math(object):
         :returns int: a - b에 대한 결과
         """
         return self._a - self._b
-
-    def multi(self):
-        """미리 입력받은 a와 b값을 곱한 결과를 반환합니다.
-
-        예제:
-            다음과 같이 사용하세요:
-            >>> Math(2, 1).multi()
-            2
-
-        :returns int: a * b에 대한 결과
-        """
-        return self._a * self._b
