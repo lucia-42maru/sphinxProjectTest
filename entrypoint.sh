@@ -132,7 +132,7 @@ export ico_location
 echo "touch .nojekyll"
 touch .nojekyll
 echo "sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html -d $sphinx_doctree"
-sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html -d $sphinx_doctree
+sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html -d $sphinx_doctree/docs/source
 echo ::endgroup::
 
 # auto creation of README.md
