@@ -12,7 +12,7 @@ docs_html=$GITHUB_WORKSPACE/gh-pages
 docs_html_source=$GITHUB_WORKSPACE/gh-pages/docs/source
 branch_src=$GITHUB_WORKSPACE/branch
 sphinx_doctree=$GITHUB_WORKSPACE/.doctree
-resources_dir=$GITHUB_WORKSPACE/.github/actions/
+resources_dir=$GITHUB_WORKSPACE/.github/actions
 
 echo ::group::Create working directories
 echo "mkdir $docs_src"
@@ -126,10 +126,10 @@ echo "module_location=$branch_src/$INPUT_MODULE_LOCATION"
 module_location=$branch_src/$INPUT_MODULE_LOCATION
 echo "export module_location"
 export module_location
-echo "ico_location=$resources_dir/favicon.ico"
-ico_location=$resources_dir/favicon.ico
-echo "export ico_location"
-export ico_location
+#echo "ico_location=$resources_dir/favicon.ico"
+#ico_location=$resources_dir/favicon.ico
+#echo "export ico_location"
+#export ico_location
 echo "touch .nojekyll"
 touch .nojekyll
 echo "sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html_source -d $sphinx_doctree"
