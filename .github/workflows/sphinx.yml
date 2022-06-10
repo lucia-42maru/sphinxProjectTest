@@ -17,6 +17,9 @@ jobs:
           repository: seanzhengw/sphinx-pages
           ref: master
           path: .github/actions/sphinx-pages
+      - name: Sphinx build
+          run: |
+            sphinx-build doc _build
       - name: Run sphinx-pages
         uses: ./.github/actions/sphinx-pages
         with:
