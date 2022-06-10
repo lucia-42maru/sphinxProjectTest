@@ -1,3 +1,3 @@
 GitHub Pages of [lucia-42maru/sphinxProjectTest](https://github.com/lucia-42maru/sphinxProjectTest.git)
 ===
-Sphinx html documentation of [7efd7d3a](https://github.com/lucia-42maru/sphinxProjectTest/tree/7efd7d3ab0b476e89930ec21023fca9eaf48bc36)
+Sphinx html documentation of [bfc9c62e](https://github.com/lucia-42maru/sphinxProjectTest/tree/bfc9c62e7a617dbc7da037adb26ef75870dc0fa8)
