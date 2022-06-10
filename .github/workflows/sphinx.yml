@@ -17,8 +17,10 @@ jobs:
           repository: seanzhengw/sphinx-pages
           ref: master
           path: .github/actions/sphinx-pages
-      - name: Sphinx build
-        run: sphinx-build doc _build
+      - uses: ammaraskar/sphinx-action@master
+        with:
+          docs-folder: "docs/"
+          build-command: "sphinx-build -b html . _build"
       - name: Run sphinx-pages
         uses: ./.github/actions/sphinx-pages
         with:
