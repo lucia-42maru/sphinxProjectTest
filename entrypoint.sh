@@ -115,8 +115,8 @@ echo ::endgroup::
 # sphinx extensions
 if [ "$INPUT_INSTALL_EXTENSIONS" = true ] ; then
     echo ::group::Installing sphinx extensions
-    echo "pip3 install -r $resources_dir/requirements.txt"
-    pip3 install -r $resources_dir/requirements.txt
+    echo "pip3 install -r $docs_src/$INPUT_SOURCE_DIR/requirements.txt"
+    pip3 install -r $docs_src/$INPUT_SOURCE_DIR/requirements.txt
     echo ::endgroup::
 fi
 
