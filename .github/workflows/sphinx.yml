@@ -16,10 +16,10 @@ jobs:
         with:
 #          repository: seanzhengw/sphinx-pages
           repository: lucia-42maru/sphinxProjectTest
-          ref: master
-          path: .github/actions/sphinx-pages
+          ref: docs
+          path: .github/actions/sphinxProjectTest
       - name: Run sphinx-pages
-        uses: ./.github/actions/sphinx-pages
+        uses: ./.github/actions/sphinxProjectTest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           create_readme: true
