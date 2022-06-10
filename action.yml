@@ -13,13 +13,13 @@ inputs:
     default: false
   source_dir:
     description: 'Path to documentation source files that relative to project root'
-    default: '.'
+    default: './src'
   install_extensions:
     description: 'Install Sphinx extensions listed in $source_dir/requirements.txt'
     default: true
   branch_name:
     description: 'Branch to generate automatic docs'
-    default: 'master'
+    default: 'docs'
   module_location:
     description: 'Where the actual module(which has __init__.py inside) is'
     required: true
