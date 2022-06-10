@@ -120,15 +120,15 @@ if [ "$INPUT_INSTALL_EXTENSIONS" = true ] ; then
 fi
 
 # sphinx-build
-echo ::group::Sphinx build html
+echo ::group::Sphinx build HTML
 echo "module_location=$branch_src/$INPUT_MODULE_LOCATION"
 module_location=$branch_src/$INPUT_MODULE_LOCATION
 echo "export module_location"
 export module_location
-echo "ico_location=$resources_dir/favicon.ico"
-ico_location=$resources_dir/favicon.ico
-echo "export ico_location"
-export ico_location
+#echo "ico_location=$resources_dir/favicon.ico"
+#ico_location=$resources_dir/favicon.ico
+#echo "export ico_location"
+#export ico_location
 echo "touch .nojekyll"
 touch .nojekyll
 echo "sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html -d $sphinx_doctree"
