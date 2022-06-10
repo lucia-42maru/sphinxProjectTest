@@ -21,7 +21,7 @@ jobs:
       - name: Run sphinx-pages
         uses: ./.github/actions/sphinxProjectTest
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.SPHINX_SECERT }}
           create_readme: true
           # 문서의 기준이 될 브랜치 입력 (예: main) 기본값은 master
           # The branch that documentation will use as reference. (Example: main) Defaults to master
