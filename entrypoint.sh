@@ -9,6 +9,7 @@ set -e
 
 docs_src=$GITHUB_WORKSPACE/docs
 docs_html=$GITHUB_WORKSPACE/gh-pages
+docs_html_source=$GITHUB_WORKSPACE/gh-pages/docs/source
 branch_src=$GITHUB_WORKSPACE/branch
 sphinx_doctree=$GITHUB_WORKSPACE/.doctree
 resources_dir=$GITHUB_WORKSPACE/.github/actions/
@@ -131,8 +132,9 @@ echo "export ico_location"
 export ico_location
 echo "touch .nojekyll"
 touch .nojekyll
-echo "sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR ./docs/source -d $sphinx_doctree"
-sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR ./docs/source -d $sphinx_doctree
+echo "sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html_source -d $sphinx_doctree"
+sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html_source -d $sphinx_doctree
+echo "TEST"
 echo ::endgroup::
 
 # auto creation of README.md
