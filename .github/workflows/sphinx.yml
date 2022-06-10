@@ -14,7 +14,8 @@ jobs:
       - name: Checkout private sphinx-pages action
         uses: actions/checkout@v2
         with:
-          repository: seanzhengw/sphinx-pages
+#          repository: seanzhengw/sphinx-pages
+          repository: lucia-42maru/sphinxProjectTest
           ref: master
           path: .github/actions/sphinx-pages
       - name: Run sphinx-pages
