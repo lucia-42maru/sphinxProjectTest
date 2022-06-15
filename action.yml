@@ -13,7 +13,7 @@ inputs:
     default: false
   source_dir:
     description: 'Path to documentation source files that relative to project root'
-    default: './src'
+    default: '.'
   install_extensions:
     description: 'Install Sphinx extensions listed in $source_dir/requirements.txt'
     default: true
