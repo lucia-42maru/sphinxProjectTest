@@ -12,6 +12,8 @@ Welcome to Test_project's documentation!
 
    modules
 
+.. automodule::
+
 Indices and tables
 ==================
 
