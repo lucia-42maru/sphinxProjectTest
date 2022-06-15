@@ -134,7 +134,6 @@ echo "touch .nojekyll"
 touch .nojekyll
 echo "sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html_source -d $sphinx_doctree"
 sphinx-build -E -a -b html $docs_src/$INPUT_SOURCE_DIR $docs_html_source -d $sphinx_doctree
-echo "TEST"
 echo ::endgroup::
 
 # auto creation of README.md
