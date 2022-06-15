@@ -13,6 +13,7 @@ Welcome to Test_project's documentation!
    modules
 
 .. automodule::
+   :memebers:
 
 Indices and tables
 ==================
