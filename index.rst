@@ -14,6 +14,7 @@ Welcome to Test_project's documentation!
 
 .. automodule::
    :memebers:
+   :caption: Modules:
 
 Indices and tables
 ==================
