@@ -12,10 +12,6 @@ Welcome to Test_project's documentation!
 
    modules
 
-.. autoclass::
-   :class:
-   :caption: Modules:
-
 Indices and tables
 ==================
 
