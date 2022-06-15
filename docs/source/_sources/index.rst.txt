@@ -12,8 +12,8 @@ Welcome to Test_project's documentation!
 
    modules
 
-.. automodule::
-   :memebers:
+.. autoclass::
+   :class:
    :caption: Modules:
 
 Indices and tables
