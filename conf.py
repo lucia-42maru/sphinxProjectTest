@@ -14,7 +14,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./src'))
+sys.path.insert(0, os.path.abspath('./src/test_src'))
 
 
 # -- Project information -----------------------------------------------------
@@ -68,7 +68,7 @@ language = 'ko'
 exclude_patterns = []
 add_function_parentheses = True
 
-autoapi_dirs = [os.path.abspath('./src')]
+autoapi_dirs = [os.path.abspath('./src/test_src')]
 autdoc_typehints = 'descriptions'
 
 # The name of the Pygments (syntax highlighting) style to use.
