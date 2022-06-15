@@ -68,7 +68,7 @@ language = 'ko'
 exclude_patterns = []
 add_function_parentheses = True
 
-autoapi_dirs = [os.path.abspath('./src')]
+autoapi_dirs = [os.path.abspath('./src'),os.path.abspath('./test_src')]
 autdoc_typehints = 'descriptions'
 
 # The name of the Pygments (syntax highlighting) style to use.
